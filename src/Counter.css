@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    position: relative;
+    background: conic-gradient(
+        from 90deg, 
+        var(--circle-color) 0deg,
+        var(--circle-color) var(--progress-degree),
+        #ddd var(--progress-degree)
+        );
+        
+        transition: background 1s linear;
+}
+
+.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:34px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px  2px rgb(255, 224, 224);
+}
+.container{
+    background: #000000;
+    padding: 50px;
+    border-radius:50px;
+}
